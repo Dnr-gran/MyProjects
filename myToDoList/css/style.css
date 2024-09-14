@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(45deg, #007ade, #1dff6c);
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 500px;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: #007ade;
+}
+
+.title{
+    width: 100%;
+    margin: 1rem;
+    padding: .5rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.title img{
+    height: 30px;
+    margin: 0 .6rem;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem .5rem;
+}
+
+.input-container input{
+    min-height: 50px;
+    min-width: 380px;
+    padding: .5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.input-container button{
+    min-width: 50px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #ff3700;
+    transition: background-color .3s ease;
+}
+
+.input-container button:hover{
+    background-color: #ff5425;
+}
+
+.input-container button:active{
+    border: 1px solid #fff;
+}
+
+.storage-container{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem .5rem;
+}
+
+.storage-container button{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: .5rem;
+    min-width: 125px;
+    min-height: 35px;
+    border: none;
+    border-radius: 10px;
+}
+
+.storage-container button:first-child{
+    color: #007ade;
+    background-color: #fff;
+}
+
+.storage-container button:first-child:hover{
+    background-color: #ecfff2;
+}
+
+.storage-container button:first-child:active{
+    border: 1px solid #00457e;
+}
+
+.storage-container button:last-child{
+    color: #fff;
+    background-color: #ff3700;
+}
+
+.storage-container button:last-child:hover{
+    background-color: #ff5425;
+}
+
+.storage-container button:last-child:active{
+    border: 1px solid #fff;
+}
+
+.list-elements{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem .5rem;
+}
+
+.element-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.element-container p{
+    list-style: none;
+    font-size: 1.5rem;
+    padding: .5rem;
+    user-select: none;
+    cursor: pointer;
+}
+
+.element-container button{
+    position: relative;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    margin-right: .3rem;
+    cursor: pointer;
+}
+
+.element-container button:focus{
+    background-color: #1dff6c;
+    border: 2px solid #fff;
+}
+
+.element-container .del-btn{
+    margin-left: 1rem;
+    border-radius: 0;
+    background-color: #ff0000;
+    border: 2px solid #a30000;
+}
+
+.element-container .del-btn:hover{
+    background-color: #ff4343;
+    border: 2px solid #bc2929;
+}
+
+.element-container .del-btn:active{
+    border: 2px solid #fff;
+}
